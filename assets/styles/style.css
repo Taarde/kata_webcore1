@@ -1,0 +1,147 @@
+:root {
+    --font-family: "TT Lakes", sans-serif;
+    --second-family: "Inter", sans-serif;
+
+}
+
+body {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.header {
+    background: #fff;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-left: 16px;
+    margin-right: 16px;
+
+}
+
+.tools {
+    display: flex;
+    flex-direction: row;
+}
+
+.tools__item:last-child {
+    margin-left: 16px;
+}
+
+.icon {
+
+    background: #ff3e79;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.icon__img {
+    margin: auto;
+}
+
+.title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 143%;
+    letter-spacing: -0.02em;
+    color: #1b1c21;
+
+    margin-bottom: 0;
+    /* border-left: #41F6D7 solid 4px; */
+    padding-left: 12px;
+    position: relative;
+}
+
+.title::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 40px;
+    background-color: #41F6D7;
+    padding: 0;
+}
+
+.nav__list {
+    display: flex;
+    overflow: scroll;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+
+    /* Internet Explorer 10+ */
+    &::-webkit-scrollbar {
+        /* WebKit */
+        display: none;
+    }
+
+    height: 88px;
+    margin: 0;
+    padding-left: 10px;
+
+}
+
+.nav__item {
+    white-space: nowrap;
+    margin: auto;
+}
+
+.nav__link {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: #7e7e82;
+    text-decoration: none;
+
+}
+
+.nav__link--selected {
+    border: 2px solid #b8ffec;
+    border-radius: 6px;
+    padding: 8px 9.3px 8px 16.5px;
+
+}
+
+.section__text {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.section__link {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: #1b1c21;
+    text-decoration: none;
+}
+
+.section__link::before {
+    content: url("../images/expand.svg");
+}
+
+.text {
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+line-height: 129%;
+letter-spacing: 0.01em;
+color: #1b1c21;
+}
